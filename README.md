@@ -1,2 +1,5 @@
 # log
-log库，支持console和file,file到达指定size后自动切分。
+目前只支持console和file两种模式
+在file模式下：
+1，会根据指定的文件大小自动切分log文件
+2，自动删除过期的log文件
