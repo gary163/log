@@ -103,7 +103,6 @@ func (f *file) monitorFile() {
 }
 
 func (f *file) doRotate(t time.Time) error {
-	fmt.Println("doRotate")
 	if !f.Rotate {
 		return nil
 	}
