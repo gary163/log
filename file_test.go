@@ -85,7 +85,7 @@ func TestInfo(t *testing.T){
 		panic(err)
 	}
 	fmt.Println("testMain")
-	SetLogger("file",string(json))
+	SetLogger(AdapterConsole,string(json))
 	SetLevel(LevelDebug)
 
 	for i:=0;i<10;i++{

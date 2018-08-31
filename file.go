@@ -87,7 +87,6 @@ func (f *file) WriteMsg(when time.Time, msg string, level int) error {
 
 func (f *file) monitorFile() {
 	ticker := time.NewTicker(time.Second)
-	fmt.Println("monitorFile")
 	for{
 		select {
 		case <-ticker.C:
